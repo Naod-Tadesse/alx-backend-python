@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """annotation task"""
 
-from typing import Tuple, Any
+from typing import Tuple, Any, List
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """task for annotation"""
-    zoomed_in: Tuple[Any, ...] = tuple([
+    zoomed_in: List = [
         item for item in lst
         for i in range(factor)
-    ])
+    ]
     return zoomed_in
 
 
