@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """duck typed annotations"""
 
-from typing import Sequence, Any, Union
+import typing
 
 
-def safe_first_element(lt: Sequence[Any]) -> Union[Any, None]:
+def safe_first_element(lst: typing.Sequence[typing.Any]) -> \
+        typing.Union[typing.Any, None]:
     """duck typed annotations"""
-    if lt:
-        return lt[0]
+    if lst:
+        return lst[0]
     else:
         return None
