@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""
+coroutine
+"""
+import asyncio
+import random
+
+
+async def async_generator():
+    """function body"""
+    for _ in range(10):
+        await asyncio.sleep(1)
+        yield random.random() * 10
